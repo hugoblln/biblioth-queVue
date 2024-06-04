@@ -36,7 +36,7 @@ matchId()
 
             <section class="row tm-item-preview">
                 <div class="col-md-6 col-sm-12 mb-md-0 mb-5">
-                    <img :src="'/src/assets/img/' + foundBook.cover" alt="Image" class="img-fluid tm-img-center-sm">
+                    <img :src="'src/assets/img/' + foundBook.cover" alt="Image" class="img-fluid tm-img-center-sm">
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <h2 class="tm-blue-text tm-margin-b-p">{{ foundBook.title }}</h2>
