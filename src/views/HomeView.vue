@@ -20,22 +20,22 @@ const openBook = (bId) => {
   router.push(routeParams)
 }
 
-const nbPerPage = 8
-const nbPages = Math.ceil(books.value.length / nbPerPage)
+// const nbPerPage = 8
+// const nbPages = Math.ceil(books.value.length / nbPerPage)
 
-const paginationHandler = (page) => {
-  console.log('go to page', page)
-  router.push({
-    query: { page: page }
-  })
-  const start = (page - 1) * BOOKS_PER_PAGE
-  const end = page * BOOKS_PER_PAGE
-  localBookstore.value = bookstore.slice(start, end)
-}
+// const paginationHandler = (page) => {
+//   console.log('go to page', page)
+//   router.push({
+//     query: { page: page }
+//   })
+//   const start = (page - 1) * BOOKS_PER_PAGE
+//   const end = page * BOOKS_PER_PAGE
+//   localBookstore.value = bookstore.slice(start, end)
+// }
 
-paginationHandler(route.query.page)
+// paginationHandler(route.query.page)
 
-console.warn({ nbPages })
+// console.warn({ nbPages })
 </script>
 
 <template>
